@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyString
+  answer: MyString
+  incorrect_1: MyString
+  category: one
+
+two:
+  content: MyString
+  answer: MyString
+  incorrect_1: MyString
+  category: two
