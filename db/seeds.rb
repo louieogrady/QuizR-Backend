@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Category.create(image_url: 'https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj1wLLboNLhAhWIMBQKHdKODcwQjRx6BAgBEAU&url=http%3A%2F%2Furbanmediatoday.com%2Fumt-sports-update-4%2F&psig=AOvVaw0M245vswWa6QFX011bDahc&ust=1555423097948936', name: "Sports")
+Category.create(image_url: 'https://seo-michael.co.uk/content/images/2018/02/sportsballs1.png', name: "Sports")
 Category.create(image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXyNrxZWKfGbYs8J4tSs2F5lWskVMbOOLBFzrz6mjE_2XA6COe', name: "Science & Nature")
 
 Question.create(category_id: 1, content: "Which of the following sports is not part of the triathlon?", answer: "Horse riding", incorrect_1: "Cycling")
