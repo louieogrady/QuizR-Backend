@@ -21,6 +21,16 @@ class Round < ApplicationRecord
     self.answer == self.question.correct_answer
   end
 
+  def unique_question
+    question = Question.all.sample
+
+    while(self.answers.questions.includes(question))
+      question = Question.all.sample
+    end
+    
+    question
+  end
+
 
   private
   def round_params
