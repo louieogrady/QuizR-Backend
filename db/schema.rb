@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_15_131011) do
+ActiveRecord::Schema.define(version: 2019_04_16_135907) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "answers", force: :cascade do |t|
+    t.string "answer"
+    t.bigint "question_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["question_id"], name: "index_answers_on_question_id"
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -32,6 +40,11 @@ ActiveRecord::Schema.define(version: 2019_04_15_131011) do
     t.index ["category_id"], name: "index_questions_on_category_id"
   end
 
+  create_table "rounds", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "scores", force: :cascade do |t|
     t.string "name"
     t.integer "points"
@@ -39,5 +52,6 @@ ActiveRecord::Schema.define(version: 2019_04_15_131011) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "answers", "questions"
   add_foreign_key "questions", "categories"
 end
