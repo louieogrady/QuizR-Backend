@@ -6,6 +6,7 @@ class RoundsController < ApplicationController
 
   def create
     @round = Round.create(round_params)
+    render json: @round
   end
 
   def new_question
@@ -14,13 +15,7 @@ class RoundsController < ApplicationController
     if (round.answers.length > 9)
       render json: { endOfRound: true }
     else
-      question = Question.all.sample
-
-      while(round.answers.questions.includes(question))
-        question = Question.all.sample
-      end
-
-      render json: question
+      render json: round.unique_question
     end
   end
 

@@ -1,10 +1,6 @@
 class Round < ApplicationRecord
   has_many :answers
 
-  def create
-    @round = Round.create(round_params)
-  end
-
   def score
     score = 0
     self.answered_question.each do
@@ -27,7 +23,7 @@ class Round < ApplicationRecord
     while(self.answers.questions.includes(question))
       question = Question.all.sample
     end
-    
+
     question
   end
 
