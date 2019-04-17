@@ -4,7 +4,7 @@ class AnswersController < ApplicationController
    #byebug
    @answer = Answer.create(answer_params)
    Round.last.answers.push(@answer)
-   render json: @answer
+   render json: @answer 
  end
 
 

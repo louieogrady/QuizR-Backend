@@ -10,12 +10,12 @@ class RoundsController < ApplicationController
   end
 
   def new_question
-    round = Round.find(params[:id])
+    @round = Round.find(params[:id])
 
-    if (round.answers.length > 9)
+    if (@round.answers.length > 9)
       render json: { endOfRound: true }
     else
-      render json: round.unique_question
+      render json: @round.unique_question
     end
   end
 
