@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get '/questions/:id', to: 'questions#show'
   post '/rounds', to: 'rounds#create'
   post '/answers', to: 'answers#create'
+  get '/scores', to: 'scores#index'
+  post '/scores', to: 'scores#create'
 end
