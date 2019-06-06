@@ -1,7 +1,7 @@
 class ScoresController < ApplicationController
 
 def index
-  @user = Score.all.limit(15).sort_by { |name| name.points}.reverse
+  @user = Score.all.limit(14).sort_by { |name| name.points}.reverse
   render json: @user
 end
 
