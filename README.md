@@ -1,25 +1,7 @@
-# README
+# Sports QuizR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sports QuizR is a simple quiz app for sports knowledge enthusiasts. Users are invited to try to get the best score by answering as many questions as they can before losing all their lives. Users begin the quiz with three lives and lose a life every time they answer a question incorrectly. The quiz has a leaderboard to keep track of the best scores achieved. 
 
-Things you may want to cover:
+This is the backend repository. [Click here to visit the frontend repo ](https://github.com/louieogrady/QuizR-Frontend) 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Mod3_project_backend
+Sports QuizR is built using Javascript and Ruby on Rails.
