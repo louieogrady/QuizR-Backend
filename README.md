@@ -5,3 +5,5 @@ Sports QuizR is a simple quiz app for sports enthusiasts. Users are invited to t
 This is the repository for the backend. [Click here to visit the frontend repo ](https://github.com/louieogrady/QuizR-Frontend) 
 
 Sports QuizR is built using Javascript and Ruby on Rails.
+
+![](sports-quizr.gif)
